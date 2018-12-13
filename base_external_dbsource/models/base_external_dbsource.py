@@ -164,12 +164,17 @@ class BaseExternalDbsource(models.Model):
                 pass
 
         method = self._get_adapter_method('execute')
-        rows, cols = method(query, execute_params, metadata)
+        res = method(query, execute_params, metadata)
 
-        if metadata:
-            return {'cols': cols, 'rows': rows}
-        else:
-            return rows
+        if res:
+            rows = res[0]
+            cols = res[1]
+
+            if metadata:
+                return {'cols': cols, 'rows': rows}
+            else:
+                return rows
+        return
 
     @api.multi
     def connection_test(self):

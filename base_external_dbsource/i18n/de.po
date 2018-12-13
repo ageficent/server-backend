@@ -51,7 +51,7 @@ msgstr ""
 "    "
 
 #. module: base_external_dbsource
-#: code:addons/base_external_dbsource/models/base_external_dbsource.py:347
+#: code:addons/base_external_dbsource/models/base_external_dbsource.py:348
 #, python-format
 msgid ""
 "\"%s\" method not found, check that all assets are installed for the %s "
@@ -62,35 +62,31 @@ msgstr ""
 
 #. module: base_external_dbsource
 #: model:ir.model.fields,field_description:base_external_dbsource.field_base_external_dbsource_ca_certs
-#, fuzzy
-msgid "Ca Certs"
+msgid "Ca certs"
 msgstr "CA Zerts"
 
 #. module: base_external_dbsource
 #: model:ir.model.fields,field_description:base_external_dbsource.field_base_external_dbsource_client_cert
-#, fuzzy
-msgid "Client Cert"
+msgid "Client cert"
 msgstr "Client-Zert"
 
 #. module: base_external_dbsource
 #: model:ir.model.fields,field_description:base_external_dbsource.field_base_external_dbsource_client_key
-#, fuzzy
-msgid "Client Key"
+msgid "Client key"
 msgstr "Client-Schlüssel"
 
 #. module: base_external_dbsource
 #: model:ir.model.fields,field_description:base_external_dbsource.field_base_external_dbsource_conn_string_full
-msgid "Conn String Full"
+msgid "Conn string full"
 msgstr ""
 
 #. module: base_external_dbsource
 #: model:ir.model.fields,field_description:base_external_dbsource.field_base_external_dbsource_conn_string
-#: model:ir.ui.view,arch_db:base_external_dbsource.view_dbsource_form
 msgid "Connection string"
 msgstr ""
 
 #. module: base_external_dbsource
-#: code:addons/base_external_dbsource/models/base_external_dbsource.py:188
+#: code:addons/base_external_dbsource/models/base_external_dbsource.py:189
 #, python-format
 msgid ""
 "Connection test failed:\n"
@@ -99,7 +95,7 @@ msgid ""
 msgstr ""
 
 #. module: base_external_dbsource
-#: code:addons/base_external_dbsource/models/base_external_dbsource.py:192
+#: code:addons/base_external_dbsource/models/base_external_dbsource.py:193
 #, python-format
 msgid ""
 "Connection test succeeded:\n"
@@ -153,6 +149,11 @@ msgid "External Database Sources"
 msgstr "Externe Datenbankquellen"
 
 #. module: base_external_dbsource
+#: selection:base.external.dbsource,connector:0
+msgid "Firebird"
+msgstr ""
+
+#. module: base_external_dbsource
 #: model:ir.model.fields,field_description:base_external_dbsource.field_base_external_dbsource_id
 msgid "ID"
 msgstr "ID"
@@ -181,7 +182,17 @@ msgstr "Zuletzt aktualisiert am"
 
 #. module: base_external_dbsource
 #: selection:base.external.dbsource,connector:0
+msgid "Microsoft SQL Server"
+msgstr ""
+
+#. module: base_external_dbsource
+#: selection:base.external.dbsource,connector:0
 msgid "MySQL"
+msgstr ""
+
+#. module: base_external_dbsource
+#: selection:base.external.dbsource,connector:0
+msgid "ODBC"
 msgstr ""
 
 #. module: base_external_dbsource
@@ -215,7 +226,7 @@ msgid "Test Connection"
 msgstr ""
 
 #. module: base_external_dbsource
-#: code:addons/base_external_dbsource/models/base_external_dbsource.py:159
+#: code:addons/base_external_dbsource/models/base_external_dbsource.py:160
 #, python-format
 msgid "query is a required argument"
 msgstr ""
